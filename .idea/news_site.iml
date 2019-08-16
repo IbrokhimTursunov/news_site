@@ -12,14 +12,15 @@
   </component>
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$" />
-    <orderEntry type="jdk" jdkName="Python 3.6.3 virtualenv at H:\news_site\venv" jdkType="Python SDK" />
+    <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="Django Lib" level="project" />
   </component>
   <component name="TemplatesService">
     <option name="TEMPLATE_CONFIGURATION" value="Django" />
     <option name="TEMPLATE_FOLDERS">
       <list>
-        <option value="H:/news_site\templates" />
+        <option value="$MODULE_DIR$/venv/Lib/site-packages/django/forms/templates" />
       </list>
     </option>
   </component>
