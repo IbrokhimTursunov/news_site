@@ -5,4 +5,4 @@ from rest_framework import serializers
 class NewsSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = News
-        fields = ['title', 'content']
+        fields = ['title', 'content', 'created']
