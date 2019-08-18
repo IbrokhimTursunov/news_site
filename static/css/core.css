@@ -1,0 +1,35 @@
+.title {
+    font-weight: bold;
+    font-size: 25px;
+    margin: 10px;
+    padding: 2px;
+    color: dodgerblue;
+}
+
+.content {
+    background-color: whitesmoke;
+    border: 1px solid grey;
+    margin: 2px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#news {
+    position: absolute;
+    width: 50%;
+    left: 25%;
+    top: 15%;
+}
+
+#search {
+    position: absolute;
+    width: 50%;
+    left: 25%;
+    height: 10%;
+}
+
+head {
+    position: absolute;
+    width: 50%;
+    left: 25%;
+}

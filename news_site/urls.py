@@ -14,12 +14,21 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import include, path
+from django.contrib.staticfiles.urls import static
+from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 from django.urls import path
 
+from api import views
+from . import settings
 from api.urls import router
 
 urlpatterns = [
+    path('', views.HomePage.as_view()),
     path('admin/', admin.site.urls),
-    path('', include(router.urls)),
+    path('search-news', views.SearchNews.as_view()),
 ]
+
+urlpatterns += router.urls
+
+urlpatterns += staticfiles_urlpatterns()
+urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
